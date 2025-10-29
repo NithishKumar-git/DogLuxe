@@ -1,0 +1,531 @@
+  body {
+    font-family: 'Poppins', sans-serif;
+   background: linear-gradient(135deg, #E8E4C9);
+   background-repeat: no-repeat;
+   height: auto;
+   margin: 0px;
+  }
+
+  html {
+  scroll-behavior: smooth;
+  transition: 15s;
+}
+  header{
+    height: 65vh;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    background: linear-gradient(135deg, #F5F5DC, #A47551);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+    
+  }
+  
+  .navbar2{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background: linear-gradient(135deg, #F5F5DC, #A47551);
+    border-radius: 10px;
+    width: 50px;
+    border-radius: 55%;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+   scroll-behavior: smooth;
+   margin-left: 10px;
+    
+  }
+.navbar2:hover{
+  cursor: pointer;
+  scroll-behavior: smooth;
+}
+.navbar2 a i{
+  color: black;
+  font-weight: bolder;
+  font-size: x-large;
+
+}
+  
+  
+
+  .navbar-links{
+    display: flex;
+    margin-left:50px;
+    
+    
+  }
+
+  .navbar-link a {
+    padding: 10px;
+    color:black;
+    text-decoration: none;
+   
+  }
+  #box{
+    background-color: black;
+    height: 5px;
+    width: 50px;
+  }
+  .navbar-link:hover{
+    text-decoration: underline;
+  }
+
+
+
+.side-bar{
+  background: linear-gradient(135deg, #F5F5DC, #A47551);
+  width: 60%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  padding: 30px 20px;
+  transition: 0.5s ease;
+  z-index: 9999; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: black;
+}
+
+    
+    
+  .side-navbar-links{
+    display: flex;
+    margin-left:50px;
+   
+    
+  }
+  .side-navbar-link{
+    margin-bottom: 50px;
+  }
+  .side-navbar-link a {
+    padding: 10px;
+    color:black;
+    text-decoration: none;
+
+   
+  }
+
+.sidebar-x{
+text-align: right;
+}
+
+   .menu-tog{
+    display: none;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 50px;
+    margin-top: 0px;
+    height: 90vh;
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), 
+    url(/images/dogfarm.png) no-repeat center center;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+
+
+.hero>div >img{
+    height: 350px;
+    width: 350px;
+    display: none;
+   
+}
+.shopnow{
+    padding: 10px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #8db9ff;
+   
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.shopnow:hover{
+   transform: scale(1.05);
+}
+
+
+.shopnow:hover{
+    cursor: pointer;
+}
+
+.service{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    
+    
+}
+
+.servicehead>h1{
+    margin-left: 70px;
+}
+.servicehead{
+  height: 110vh;
+}
+
+.servicecontainer1{
+    width: 300px;
+    padding: 20px;
+    background:linear-gradient(135deg, #F5F5DC, #A47551) ;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 55px;
+    height:200px;
+}
+.servicecontainer1:hover{
+    cursor: pointer;
+    box-shadow: #A47551 0px 7px 29px 0px;
+    transition: 0.5s;
+    
+}
+
+
+
+.collections-cont img{
+    height:250px;
+    width: 200px;
+    
+
+}
+.collect {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 40px;
+  animation: collectMove 25s linear infinite; 
+ transition: transform 0.4s ease;
+  margin-left: 10px;}
+
+
+.collections-cont{
+  position: relative;
+  flex-basis: 20%;
+  
+}
+.collections-cont button {
+    padding: 10px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #8db9ff;
+    transform: scale(1.05);
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position:absolute;
+    top: 80%;
+    left: 15%;
+}
+.collections-cont h3 {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.collections-cont:hover h3 {
+  opacity: 10;
+}
+
+.collections-cont h3 {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+   
+#collections >h1{
+  margin-left: 60px;
+}
+
+.collect1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+   margin-left: 10px;
+  animation: collectMove1 15s linear infinite;
+    transition: transform 0.4s ease;
+}
+
+.shit, .german, .husky {
+  transition: all 0.4s ease-in-out;
+}
+.collect img, .collect1 img {
+  transition: opacity 0.4s ease-in-out;
+  border-radius: 20px;
+}
+
+.collect img:hover, .collect1 img:hover {
+  opacity: 0.8;
+  transform: scale(1.1); 
+}
+.news{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.news input{
+  width: 1000px;
+  padding: 10px;
+
+}
+
+.news button{
+    padding: 10px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #8db9ff;
+    transform: scale(1.05);
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 20px;
+}
+footer{
+  background-color: #A47148;
+   height: 35vh;
+
+}
+.footercont{
+    margin: 0px;
+    margin-top: 50px;
+    padding: 20px;
+    
+}
+.footercont{
+  display: grid;
+  grid-template-columns: 4fr 4fr ;
+}
+.footer-box1 > i{
+    font-size: 25px;
+    border: 3px solid black;
+    padding:10px;
+    border-radius: 45%;
+    margin: 10px;
+
+
+}
+
+.footer-box1 > i:hover{
+    cursor: pointer;
+}
+
+.thekennel input{
+  width: 700px;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  border: 2px solid #A47148 ;
+  margin-top: 50px;
+  margin-bottom: 50px;
+ 
+}
+.thekennel input :focus{
+  outline: none;
+   background: transparent;
+}
+
+
+/* 
+@keyframes collectMove1 {
+  0% {
+    transform: translateX(-100%); 
+  }
+  100% {
+    transform: translateX(100%); 
+  }
+} */
+.contform {
+  background: linear-gradient(90deg, #A6C8FF 0%, #F9D6B5 100%);
+  width: 600px;
+  margin: 100px auto;
+  border-radius: 25px;
+  padding: 40px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contform h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contform input,
+.contform textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 15px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.contform input:focus,
+.contform textarea:focus {
+  box-shadow: 0 0 8px rgba(166, 200, 255, 0.8);
+}
+
+.contform textarea {
+  height: 150px;
+  resize: none;
+}
+
+.contform button {
+  margin-top: 25px;
+  padding: 12px 0;
+  width: 150px;
+  background-color: #A6C8FF;
+  color: #222;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: rgba(166, 200, 255, 0.5) 0px 5px 15px;
+}
+
+.contform button:hover {
+  background-color: #8db9ff;
+  transform: scale(1.05);
+}
+
+  @media screen and (max-width:700px)  {
+    .menu-tog{
+    display: block;
+}
+.navbar-link{
+    display: none;
+}
+.hero>div >img{
+   display: none;
+   
+}
+
+.servicehead{
+  height: 250vh;
+}
+.servicehead h1{
+  font-size: x-large;
+}
+.service{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  
+}
+.servicecontainer1{
+
+    padding: 10px;
+    margin-top: 20px;
+    margin: 25px;
+
+ 
+}
+
+   #search{
+    width: auto;
+   }
+  header{
+    height: 40vh;
+  }
+.collect{
+  animation: collectMove1 10s linear infinite;
+}
+.collect1{
+  animation: collectMove1 10s linear infinite;
+}
+
+footer{
+    height: 60vh;
+   
+}
+.footer-box2 p{
+   font-size: 15px;
+   
+}
+.footer-box1 > i{
+    font-size: 15px;
+    border: 2px solid black;
+
+
+}
+.footer-box1 h3{
+  font-size: 15px;
+  width: 90%;
+
+}
+.news input{
+  width: 600px;
+  padding: 10px;
+
+}
+
+  }
+  @media (max-width: 768px) {
+  .contform {
+    width: 90%;
+    padding: 25px;
+    margin: 60px auto;
+    border-radius: 20px;
+  }
+
+  
+  .contform input,
+  .contform textarea {
+    font-size: 14px;
+  }
+
+  .contform button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .contform {
+    width: 95%;
+    padding: 20px;
+    margin: 50px auto;
+  }
+
+  .contform h2 {
+    font-size: 18px;
+  }
+
+  .contform input,
+  .contform textarea {
+    font-size: 13px;
+  }
+
+  .contform button {
+    font-size: 13px;
+    padding: 10px 0;
+  }
+
+}

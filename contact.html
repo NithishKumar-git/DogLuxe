@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DogLuxe</title>
+</head>
+
+<body>
+    
+    <nav class="navbar">
+        <h1>DogLuxe</h1>
+
+       <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <!-- <p class="navbar-link"><a href="">Collections</a></p> -->
+            <p class="navbar-link"><a href="collections.html">The Kennel</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+        <div class="menu-tog" onclick="shownav()"> <i class="fa-solid fa-bars"></i> </div>
+    </nav>
+
+<div class="side-bar">
+
+    <p class="sidebar-x" onclick="hidenav()">
+        <i class="fa-solid fa-xmark"></i>
+    </p>
+    <p class="side-navbar-link"><a href="index.html">Home</a></p>
+    <p class="side-navbar-link"><a href="collections.html">The Kennel</a></p>
+    <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+</div>
+    </div>
+<form class="contform">
+    <h1> Contact us </h1>
+    <input type="text" placeholder="Name" required>
+    <input type="text" placeholder="Email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+         required>
+     <input type="tel" placeholder="Phone"  pattern="[0-9]{10}" required>
+    <textarea placeholder="Your Message"></textarea>
+    <button id="formsub" onclick="current()"> Submit </button>   
+</form>
+
+     <footer>
+        <div class="footercont">
+            <div class="footer-box1">
+
+                <h3> Stay Connected — Follow Us on Social Media! </h3>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="footer-box2">
+                <h3>About</h3>
+                <p>At DogLuxe, we’re passionate about raising happy, healthy dogs in a safe and loving environment. From
+                    expert grooming to professional training, every service is designed to keep tails wagging and hearts
+                    full.</p>
+            </div>
+        </div>
+        <center>
+            <p>&copy; 2025 Your DogLuxe | All rights reserved
+            <p>
+        </center>
+    </footer>
+</body>
+<script src="/javascript/js.js"></script>
+</html>

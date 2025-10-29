@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" onkeyup="check(event)" >
+    </form>
+    <div>
+        <h1>One</h1>
+        <h1>Two</h1>
+        <h1>Three</h1>
+        <h1>Four</h1>
+        <h1>Five</h1>
+    </div>
+</body>
+<script>
+    var enteredtext = " "
+    var cont=document.querySelector("div")
+    var elements = cont.querySelectorAll("h1")
+
+    function check(event){
+        enteredtext = event.target.value
+    }
+</script>
+</html>
