@@ -25,7 +25,7 @@ function shownav(){
 }
 
 function hidenav(){
-    side_bar.style.left="-60%"
+    side_bar.style.left="-70%"
 }
 function mt() {
   let title = document.querySelector(".collections-cont h3");
